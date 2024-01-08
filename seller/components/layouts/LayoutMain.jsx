@@ -25,11 +25,6 @@ function LayoutMain({ children }) {
       label: "Trang chủ",
     },
     {
-      key: "/user",
-      icon: <UsergroupAddOutlined />,
-      label: "Người dùng",
-    },
-    {
       key: "/product",
       icon: <UsergroupAddOutlined />,
       label: "Sản Phẩm",

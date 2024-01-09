@@ -107,20 +107,18 @@ function Product() {
       render: (e) => (
         <div className="flex items-center space-x-[10px]">
           <div
-            className="px-[10px] py-[5px] rounded-sm bg-[green] border-[green] border-[1px] bg-opacity-25 space-x-[5px] text-[white] flex items-center cursor-pointer font-medium"
+            className="px-[20px] py-[5px] rounded-[6px] bg-[#e9ba4d] border-[#e9ba4d] border-[1px] bg-opacity-25 space-x-[5px] text-[white] flex items-center cursor-pointer font-medium"
             onClick={() => {
               setDataUpdate(e);
               setOpenUpdate(true);
             }}
           >
-            <HighlightOutlined className="text-[green]" />
-            <span className="text-[green]">Sửa</span>
+            <span className="text-[#927532]">Sửa</span>
           </div>
           <div
-            className="px-[10px] py-[5px] rounded-sm bg-[red] border-[red] border-[1px] bg-opacity-25 space-x-[5px] text-[white] flex items-center cursor-pointer font-medium"
+            className="px-[20px] py-[5px] rounded-[6px] bg-[red] border-[red] border-[1px] bg-opacity-25 space-x-[5px] text-[white] flex items-center cursor-pointer font-medium"
             onClick={() => handleDelete(e.Product_id)}
           >
-            <LockOutlined className="text-[red]" />
             <span className="text-[red]">Xoá</span>
           </div>
         </div>

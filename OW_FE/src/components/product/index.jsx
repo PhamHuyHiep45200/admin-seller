@@ -54,7 +54,7 @@ function Product() {
       width: 100,
       render: (e) => (
         <div className="flex items-center">
-          {e.color &&
+          {e.color && e.color.length &&
             e.color.map((c, i) => {
               return (
                 <div key={c}>
@@ -71,7 +71,7 @@ function Product() {
       key: 'name',
       render: (e) => (
         <div className="flex items-center">
-          {e.size &&
+          {e.size && e.size.length &&
             e.size.map((c, i) => {
               return (
                 <div key={c}>

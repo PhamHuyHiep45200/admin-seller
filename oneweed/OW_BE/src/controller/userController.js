@@ -53,7 +53,7 @@ const login = async (req, res) => {
     }
 
     const isPassword = true || bcrypt.compareSync(req.body?.password, rows[0].Password)
-
+    console.log('next')
     if (!isPassword) {
       return res.status(409).json('Wrong password')
     }
@@ -62,6 +62,7 @@ const login = async (req, res) => {
       { id: rows[0].User_id, email: rows[0].email },
       'jwtkey'
     )
+    console.log('next2')
 
     const { password, ...other } = rows[0]
 

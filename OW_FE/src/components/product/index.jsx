@@ -54,12 +54,12 @@ function Product() {
       width: 100,
       render: (e) => (
         <div className="flex items-center">
-          {e.color && e.color.length &&
-            e.color.map((c, i) => {
+          {e.color &&
+            JSON.parse(e.color).map((c, i) => {
               return (
                 <div key={c}>
                   {c}
-                  {i + 1 !== e.color.length ? ', ' : ''}
+                  {i + 1 !== JSON.parse(e.color).length ? ', ' : ''}
                 </div>
               );
             })}
@@ -71,12 +71,12 @@ function Product() {
       key: 'name',
       render: (e) => (
         <div className="flex items-center">
-          {e.size && e.size.length &&
-            e.size.map((c, i) => {
+          {e.size &&
+            JSON.parse(e.size).map((c, i) => {
               return (
                 <div key={c}>
                   {c}
-                  {i + 1 !== e.size.length ? ', ' : ''}
+                  {i + 1 !== JSON.parse(e.size).length ? ', ' : ''}
                 </div>
               );
             })}
